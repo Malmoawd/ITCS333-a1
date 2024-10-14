@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 247, 250); 
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+/* styles applied to the header of the website */
+header {
+    background-color: rgb(178, 234, 208); 
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* shadow to distinguish the header */
+}
+
+/* the kindergarten title  */
+h1 {
+    margin: 0;
+    font-size: 50px; 
+    color: rgb(248, 137, 100); 
+}
+
+/* navigation styling */
+nav ul {
+    padding: 0;
+
+    justify-content: center;
+    display: flex; /* flexbox for layout */
+    margin-top: 15px;
+
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+/* button styling  */
+
+nav a {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px; /* rounded corners */
+    background-color: rgb(52, 159, 180); 
+    transition: background-color 0.3s ease;
+    
+}
+
+/* changes behavior when the cursor hover over the button */
+nav a:hover {
+    background-color: rgb(163, 196, 224); 
+    cursor: pointer;
+}
+
+/* main content styling and centering */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+
+/* section styling */
+h2 {
+    color: rgb(231, 110, 82); 
+    font-size: 35px; 
+    border-bottom: 3px solid rgb(255, 72, 72); /*  border for definition */
+    padding-bottom: 10px;
+    margin-bottom: 20px; /* space below the heading */
+}
+
+/* gallery styling */
+.kindergarten-gallery {
+    
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.kindergarten-gallery img {
+    width: 100%;
+    border-radius: 15px; /* rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth transition */
+}
+
+.kindergarten-gallery img:hover {
+    transform: scale(1.05); /* zoom effect when hovering */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* shadow whe hovering */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(255, 237, 204); 
+    position: relative;
+    width: 100%;
+    margin-top: 40px; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* shadow for definition */
+}
+
+footer p {
+    margin: 10px 0; /* space between the links */
+}
+
+footer a {
+    color: rgb(212, 136, 36); 
+    
+}
+
+footer a:hover {
+    text-decoration: underline; /* underline while hovering */
+}
+
+/* styling beased on device screen size */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .kindergarten-gallery {
+        grid-template-columns: 1fr; 
+    }
+}
+
+/* Announcements styling */
+.announcements {
+    background-color: rgb(178, 234, 208); 
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.announcement {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.announcement h3 {
+    color: rgb(79, 195, 247); 
+}
+
+/* link styling */
+.apply-link {
+    color: rgb(52, 159, 180); 
+    text-decoration: underline; 
+    transition: color 0.3s ease, transform 0.3s ease; /* transition effects */
+}
+
+.apply-link:hover {
+    color: rgb(231, 110, 82); /* changes color while hovering */
+    transform: scale(1.05); /* zoom effect when hovering */
+}
